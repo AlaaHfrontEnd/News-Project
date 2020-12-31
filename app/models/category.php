@@ -11,6 +11,10 @@ class category extends model{
         return $data;
     }
 
+    public function deleteCategory($id){
+        $data =  model::db()->delete("categories", ['id'=>$id]); 
+        return $data;
+    }
 
   
 }

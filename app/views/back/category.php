@@ -56,9 +56,9 @@
                       <td><?= $name = $c->name; ?></td>
                       <td><?= $img = $c->img; ?></td>
                       <td><?= $icon = $c->icon; ?></td> 
-                      <!-- <td><a href="add" class="btn btn-success">Add</a></td>                 -->
-                      <td><a href="update" class="btn btn-primary">Update</a></td>                
-                      <td><a href="delete" class="btn btn-danger">Delete</a></td>                
+                                    
+                      <td><a href="" class="btn btn-primary">Update</a></td>                
+                      <td><a href="delete/ <?= $id = $c->id; ?>"  class="btn btn-danger">Delete</a></td>                
                     </tr>
                   <?php endforeach; ?>
                   </tbody>

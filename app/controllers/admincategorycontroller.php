@@ -31,6 +31,24 @@ class admincategorycontroller extends controller{
         $this->view("back/category", ["title"=>"AdminPost", "data"=>$data]);
     }
 
+    public function delete($id){
+
+        $category = new category();
+        $data = $category->deleteCategory($id);
+        echo $data;die;
+
+        if($data){
+            helpers::redirect("admincategory/index");
+        }
+
+    }
+
+
+
+
+
+
+
     public function logout(){
         session::Stop();
         helpers::redirect("home");
